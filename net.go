@@ -55,7 +55,7 @@ func ConnectMQTT(conn net.Conn, cm *packets.ConnectPacket, protocolVersion uint)
 	rc, sessionPresent := verifyCONNACK(conn)
 	return rc, sessionPresent
 }
-
+dd
 // This function is only used for receiving a connack
 // when the connection is first started.
 // This prevents receiving incoming data while resume
