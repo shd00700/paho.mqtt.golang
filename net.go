@@ -62,7 +62,7 @@ func ConnectMQTT(conn net.Conn, cm *packets.ConnectPacket, protocolVersion uint)
 // is in progress if clean session is false.
 func verifyCONNACK(conn net.Conn) (byte, bool) {
 	DEBUG.Println(NET, "connect started")
-
+	println("dd")
 	ca, err := packets.ReadPacket(conn)
 	if err != nil {
 		ERROR.Println(NET, "connect got error", err)
